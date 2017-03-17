@@ -1,0 +1,10 @@
+<ion-view view-title="Playlist">
+  <ion-content> 
+    <h1> Playlist</h1>
+    <h2>{{parametros.playlistId}}</h2>
+    <div ng-if="usuario">
+        <h2>{{usuario.first_name | uppercase}} {{usuario.last_name | uppercase}}</h2>
+        <img ng-src="{{usuario.avatar}}" alt="Description"/>
+    </div>
+  </ion-content>
+</ion-view>
